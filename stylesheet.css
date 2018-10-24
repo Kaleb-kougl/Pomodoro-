@@ -1,0 +1,79 @@
+:root {
+    --timer-bg-color: darkblue;
+}
+
+.wrapper {
+    margin: 0;
+    padding: 0;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+#timer-wrapper {
+    position: absolute;
+    background-color: var(--timer-bg-color);
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 35em;
+    width: 25em;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+h1 {
+    flex: 1;
+}
+
+.timer-settings {
+    display: flex;
+    justify-content: space-evenly;    
+    flex: 2;
+}
+
+.session-wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.session {
+    border-width: 3px;
+    width: 10em;
+    border-color: white;
+    border-style: solid;
+    border-radius: 10px;
+    flex: 1;
+    font-size: 20pt;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.btn-custom {
+    color: white;
+    background-color: var(--timer-bg-color);
+    border: none;
+}
+
+button:focus {
+    outline: 0;
+}
+
+button:hover {
+    color: gray;
+}
+
+button:active {
+    color: black;
+}
+
+.timer-buttons {
+    font-size: 15pt;
+}
