@@ -1,11 +1,16 @@
 :root {
-    --timer-bg-color: darkblue;
+    --timer-bg-color: rgb(210, 254, 210);
+    --text-color: rgb(253, 173, 139);
+}
+
+body {
+    background-color: rgb(237, 227, 216);
 }
 
 .wrapper {
     margin: 0;
     padding: 0;
-    color: white;
+    color: var(--text-color);
     text-align: center;
     display: flex;
     justify-content: space-between;
@@ -46,7 +51,7 @@ h1 {
 .session {
     border-width: 3px;
     width: 10em;
-    border-color: white;
+    border-color: var(--text-color);
     border-style: solid;
     border-radius: 10px;
     flex: 1;
@@ -57,7 +62,7 @@ h1 {
 }
 
 .btn-custom {
-    color: white;
+    color: var(--text-color);
     background-color: var(--timer-bg-color);
     border: none;
 }
